@@ -3,9 +3,8 @@ pipeline
 	agent any
 	stages
 	{
-		stage
+		stage('parallel deployment')
 		parallel{
-		
 		stage('print hi')
 		{
 			steps
