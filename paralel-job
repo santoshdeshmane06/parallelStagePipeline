@@ -6,14 +6,14 @@ pipeline
 		stage('parallel deployment') 
 		{
 		parallel {
-		stage('print hi')
+		stage('windows')
 		{
 			steps
 			{
 				echo 'hi in linux'
 			}
 		}
-		stage('print hi')
+		stage('linux')
 		{
 			steps
 			{
