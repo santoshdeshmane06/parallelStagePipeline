@@ -3,21 +3,23 @@ pipeline
 	agent any
 	stages
 	{
-		stage('parallel deployment')
+		stage('parallel deployment') 
+		{
 		parallel {
 		stage('print hi')
 		{
 			steps
 			{
-				echo hi in linux
+				echo 'hi in linux'
 			}
 		}
 		stage('print hi')
 		{
 			steps
 			{
-				echo hi in windows
+				echo 'hi in windows'
 			}
+		}
 		}
 		}
 	}
